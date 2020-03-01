@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2020/ScrollListViewPage.dart';
 import 'package:flutter_2020/ScrollSinglePage.dart';
 
 class ScrollPage extends StatelessWidget {
@@ -16,6 +17,30 @@ class ScrollPage extends StatelessWidget {
             onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context){
                 return ScrollSingle();
+              }));
+            },
+          ),
+          RaisedButton(
+            child: Text("跳转ListViewPage1"),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return ListViewPage1();
+              }));
+            },
+          ),
+          RaisedButton(
+            child: Text("跳转ListViewPage2"),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return ListViewPage2();
+              }));
+            },
+          ),
+          RaisedButton(
+            child: Text("跳转InfinityListView"),
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return InfinityListView();
               }));
             },
           ),
